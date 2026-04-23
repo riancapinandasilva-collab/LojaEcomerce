@@ -1,4 +1,10 @@
+using LojaEcomerce.interfaces;
+using LojaEcomerce.Repositorio;
+
 var builder = WebApplication.CreateBuilder(args);
+
+//injeção de independencia
+builder.Services.AddScoped<IUsuarioRepositorio, UsuarioRepositorio>();
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();

@@ -1,9 +1,10 @@
-﻿using LojaEcomerce.Models;
+﻿using LojaEcomerce.interfaces;
+using LojaEcomerce.Models;
 using MySql.Data.MySqlClient;
 
 namespace LojaEcomerce.Repositorio
 {
-    public class UsuarioRepositorio
+    public class UsuarioRepositorio : IUsuarioRepositorio
     {
         //variavel privada e somente leitura para
         //receber a conecxao do banco
@@ -36,6 +37,7 @@ namespace LojaEcomerce.Repositorio
                 
 
             }
+
             return null;
 
 
