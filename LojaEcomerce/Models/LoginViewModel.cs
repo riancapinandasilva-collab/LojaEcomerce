@@ -12,4 +12,5 @@
 
         public string? Nivel { get; set; }
     }
+
 }
